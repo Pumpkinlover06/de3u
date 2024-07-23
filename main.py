@@ -261,7 +261,7 @@ with gr.Blocks(title="de3u") as instance:
         fn=show_output,
     )
 
-instance.launch(inbrowser=not args.no_browser,
-                server_port=args.port,
+instance.launch(share=True.inbrowser=not args.no_browser,
+                server_port=7861,
                 debug=args.debug,
                 favicon_path=icon)
